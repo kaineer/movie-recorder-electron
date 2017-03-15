@@ -41,7 +41,7 @@ displayMaps.data = function (e) {
     text += 'delete';
   }
 
-  text += '\',\n  cursorPos: {\n    row: ' + e.start.row +
+  text += '\',\n  cursorPosition: {\n    row: ' + e.start.row +
     ',\n    column: ' + e.start.column + '\n  },\n';
 
   if (e.action === 'insert') {
