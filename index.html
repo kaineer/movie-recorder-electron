@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie recorder</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/photon.min.css">
+    <link rel="stylesheet" href="./css/editor.css">
+  </head>
+  <body>
+    <div class="window">
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane">
+            <div class="toolbar toolbar-header">
+              <h1 class="title">Editor</h1>
+            </div>
+
+            <div id="editor"></div>
+          </div>
+          <div class="pane">
+            <div class="toolbar">
+              <div class="toolbar-actions">
+                <div class="btn-group">
+                  <button class="btn btn-primary button-load" title="Загрузить">
+                    <span class="icon icon-doc"></span> Загрузить
+                  </button>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn-default button-reset" title="Откатить">
+                    <span class="icon icon-cancel"></span>
+                  </button>
+                  <button class="btn btn-default button-replay" title="Обновить">
+                    <span class="icon icon-arrows-ccw"></span>
+                  </button>
+                  <button class="btn btn-default button-remove-last" title="Отменить последнее действие">
+                    <span class="icon icon-fast-backward"></span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-group">
+              <div class="tab-item active tab-data">
+                Data output
+              </div>
+              <div class="tab-item tab-dsl">
+                DSL output
+              </div>
+            </div>
+
+
+            <div>
+              <pre id="actions"></pre>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="./js/app/index.js"></script>
+  </body>
+</html>

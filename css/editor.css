@@ -1,0 +1,16 @@
+#editor {
+  width: 100%;
+  height: 100%;
+
+  float: left;
+}
+
+#actions {
+  cursor: text;
+  user-select: text;
+}
+
+#actions::selection {
+  color: #fff;
+  background-color: #8AA2D9;
+}
