@@ -6,5 +6,9 @@
   "author": "Connor Sears",
   "scripts": {
     "start": "electron ."
+  },
+  "dependencies": {
+    "brace": "^0.11.1",
+    "debug": "^3.1.0"
   }
 }
